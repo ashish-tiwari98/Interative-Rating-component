@@ -1,7 +1,7 @@
 body {
     font-family: 'Overpass', sans-serif;
     background-color: hsl(216, 12%, 8%);
-    color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 54%);
 }
 
 p{
@@ -11,11 +11,65 @@ p{
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    margin-top:30px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
 }
+
+.card{
+    max-width: 26rem; 
+    height:70vh;
+    margin:70px;
+    border-radius:7%;
+    padding:15px;
+    background-color: rgb(30,37,47);
+}
+
+.circle{
+    margin:10px;
+    height: 50px;
+    width:50px;
+    width:50px;
+    border-radius : 100%;
+    background-color: rgb(41,48,61);  
+    float:left; 
+}
+
+.star{
+    margin:17px;
+    font-weight: bold;
+}
+
+.card-text{
+    padding:15px 0 15px 0;
+}
+
+.btn{
+    background-color: rgb(251,116,19);
+    color:white;
+    border-radius: 30px;
+    height:55px;
+    width:100%;
+    margin:25px 0 10px 0;
+}
+
+.btn:hover{
+    background-color:white;
+    color:rgb(251,116,19);
+}
+
+.rating>div::selection{
+background-color: hsl(217, 12%, 63%);
+color:white;
+}
+.rating>div:hover{
+    background-color: rgb(251,116,19);
+    color:white;
+    }
+    
+
 
 
 
