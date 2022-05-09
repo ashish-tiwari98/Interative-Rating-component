@@ -1,3 +1,7 @@
+#thankyou{
+    display: none;
+}
+  
 body {
     font-family: 'Overpass', sans-serif;
     background-color: hsl(216, 12%, 8%);
@@ -67,7 +71,7 @@ p{
     background-color: rgb(251,116,19);
     color:white;
 }
-    
+  
 
 
 
