@@ -1,22 +1,28 @@
-#thankyou{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#thankyou {
     display: none;
 }
-  
+
 body {
-    margin:0;
     font-family: 'Overpass', sans-serif;
     background-color: hsl(216, 12%, 8%);
     color: hsl(216, 12%, 54%);
 }
 
-p{
+p {
     font-size: 15px;
 }
 
 .attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    margin-top:30px;
+    font-size: 12px; 
+    text-align: center;
+    position:relative;
+    bottom:-20px;
 }
 
 .attribution a { 
@@ -24,71 +30,85 @@ p{
 }
 
 .card{
-    max-width: 26rem; 
-    height:460px;
+    max-width:26em;
+    height:72%;
     margin:70px;
     border-radius:7%;
     padding:15px;
     background-color: rgb(30,37,47);
 }
 
-
-.circle,.circlestar{
-    margin:10px;
+.circle, #circlestar {
+    margin:0.62em;
     height: 50px;
-    width:50px;
     width:50px;
     border-radius : 100%;
     background-color: rgb(41,48,61);  
     float:left; 
 }
 
-.star{
-    margin:17px;
+.star {
+    padding:1.1em;
     font-weight: bold;
 }
 
-.card-text{
+.card-text {
     padding:15px 0 15px 0;
     color:rgb(149,158,172);
 }
 
-.btn{
+.btn {
     background-color: rgb(251,116,19);
     color:white;
     border-radius: 30px;
     height:55px;
     width:100%;
-    margin:25px 0 10px 0;
+    margin:45px 0 10px 0;
 }
 
-.btn:hover{
+.btn:hover {
     background-color:white;
     color:rgb(251,116,19);
 }
 
 
-.rating>div:hover{
+.rating>div:hover {
     background-color: rgb(251,116,19);
     color:white;
 }
-
-#result-container{
+.marginset{
+    margin:30px auto;
+}
+#result {
     width:60%;
-    height:35px;
+    height:30px;
     background-color: rgb(23,30,40);
-    margin:auto;
+    /* margin:auto; */
     text-align: center;
     border-radius:25px;
 }
 
-@media only screen and (max-width:375px{
-    
-}
-  
-
-
-
-
-
-  
+@media (width:375px){
+    .card{
+        margin:70px 40px;
+        height:55vh;
+    }
+    .circle,#circlestar{
+        margin:0.1em;
+        width:43px;
+        height:43px;
+    }
+    .star{
+        padding:0.8em;
+    }
+    .btn{
+        height:40px;
+        margin-top:10px;
+    }
+    #result{
+        width:80%;
+    }
+    .marginset{
+        margin:12px auto;
+    }
+ }
