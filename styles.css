@@ -3,6 +3,7 @@
 }
   
 body {
+    margin:0;
     font-family: 'Overpass', sans-serif;
     background-color: hsl(216, 12%, 8%);
     color: hsl(216, 12%, 54%);
@@ -24,7 +25,7 @@ p{
 
 .card{
     max-width: 26rem; 
-    height:70vh;
+    height:460px;
     margin:70px;
     border-radius:7%;
     padding:15px;
@@ -70,6 +71,19 @@ p{
 .rating>div:hover{
     background-color: rgb(251,116,19);
     color:white;
+}
+
+#result-container{
+    width:60%;
+    height:35px;
+    background-color: rgb(23,30,40);
+    margin:auto;
+    text-align: center;
+    border-radius:25px;
+}
+
+@media only screen and (max-width:375px{
+    
 }
   
 
